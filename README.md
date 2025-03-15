@@ -29,11 +29,12 @@ python --version
 -- You should see something like Python 3.9.13.
 
 **Step 3: Set Up the Virtual Environment**
-1. Open PowerShell (search for "PowerShell" in the Start menu).
-2. Navigate to the project folder:
-cd D:\voice chatbot RASA
-3. Activate the virtual environment:
-& "D:\voice chatbot RASA\venv39\Scripts\Activate.ps1"
+1. Open PowerShell and navigate to the project folder:
+cd <path-to-your-project>
+2. Create a virtual environment:
+python -m venv venv39
+3. Activate it:
+& "<path-to-your-project>\venv39\Scripts\Activate.ps1"
 -- You’ll see (venv39) at the start of the line if it worked.
 
 **Step 4: Install Dependencies**
