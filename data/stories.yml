@@ -1,0 +1,28 @@
+version: "3.1"
+
+stories:
+
+- story: Greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Current weather
+  steps:
+  - intent: current_weather
+  - action: action_current_weather
+
+- story: Forecast weather
+  steps:
+  - intent: forecast_weather
+  - action: action_forecast_weather
+  
+- story: Unknown request
+  steps:
+  - intent: unknown
+  - action: utter_unknown

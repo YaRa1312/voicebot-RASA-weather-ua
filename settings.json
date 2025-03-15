@@ -1,0 +1,10 @@
+{
+    "python.defaultInterpreterPath": "D:\\voice chatbot RASA\\venv39\\Scripts\\python.exe",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "args": ["-NoExit", "& 'D:\\voice chatbot RASA\\venv39\\Scripts\\Activate.ps1'"]
+        }
+    }
+}

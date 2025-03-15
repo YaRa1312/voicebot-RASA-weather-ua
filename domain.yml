@@ -1,0 +1,40 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - current_weather
+  - forecast_weather
+  - unknown
+
+entities:
+  - city
+  - day
+
+slots:
+  city:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: city
+  day:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: day
+
+responses:
+  utter_greet:
+  - text: "Привіт! Я можу розповісти про погоду. Який населений пункт цікавить?"
+
+  utter_goodbye:
+    - text: "До побачення! За потреби звертайтесь ще."
+
+  utter_unknown:
+    - text: "Вибачте, я не розумію вашого запиту. Спробуйте запитати про погоду, наприклад: 'Яка погода в Києві?'"
+
+actions:
+  - action_current_weather
+  - action_forecast_weather

@@ -1,0 +1,31 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Привіт
+    - Здоров
+    - Добрий день
+
+- intent: goodbye
+  examples: |
+    - До побачення
+    - Бувай
+    - Прощавай
+
+- intent: current_weather
+  examples: |
+    - Яка погода в [Києві](city) сьогодні?
+    - Погода в [Львові](city) зараз
+    - Скажи, яка погода в [Парижі](city)
+
+- intent: forecast_weather
+  examples: |
+    - Яка погода в [Києві](city) на завтра?
+    - Прогноз погоди в [Лондоні](city) на [післязавтра](day)
+    - Яка буде погода в [Одесі](city) в [п’ятницю](day)?
+
+- intent: unknown
+  examples: |
+    - Що таке квантова механіка?
+    - Який сенс життя?
