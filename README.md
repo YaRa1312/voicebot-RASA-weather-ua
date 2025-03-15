@@ -30,7 +30,7 @@ python --version
 
 **Step 3: Set Up the Virtual Environment**
 1. Open PowerShell and navigate to the project folder:
-cd <path-to-your-project>
+cd path-to-your-project
 2. Create a virtual environment:
 python -m venv venv39
 3. Activate it:
